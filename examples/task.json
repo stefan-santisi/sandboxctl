@@ -1,0 +1,13 @@
+{
+  "name": "write-hello",
+  "image": "docker.io/library/alpine:3.20",
+  "setup": [
+    "true"
+  ],
+  "steps": [
+    "echo hello > /tmp/hello.txt",
+    "cat /tmp/hello.txt"
+  ],
+  "success_check": "grep -q hello /tmp/hello.txt",
+  "timeout_seconds": 60
+}

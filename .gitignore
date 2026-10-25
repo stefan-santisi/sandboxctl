@@ -1,0 +1,5 @@
+/sandboxctl
+/results/
+*.exe
+*.test
+/tmp/
